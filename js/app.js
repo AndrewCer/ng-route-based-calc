@@ -6,7 +6,7 @@ app.config(function ($routeProvider) {
       templateUrl: 'partials/home.html',
       controller: 'HomeController'
     })
-    .when('/add/:numone/:numtwo', {
+    .when('/add', {
       templateUrl: 'partials/add.html',
       controller: 'AddController'
     })
@@ -14,5 +14,5 @@ app.config(function ($routeProvider) {
       templateUrl: 'partials/div.html',
       controller: 'DivController'
     })
-    .otherwise({redirectTo: '/'})
+    // .otherwise({redirectTo: '/'})
 })
